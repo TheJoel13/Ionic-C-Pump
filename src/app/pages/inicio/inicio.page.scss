@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #c8c4c4;
+  }
+  ion-header {
+    ion-toolbar {
+      ion-button {
+        margin-top: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  ion-button.inicio-button {
+    --background: rgba(5, 4, 4, 0.4);
+    --background-activated: rgba(0, 0, 0, 0.6);
+    --background-hover: rgba(46, 44, 44, 0.6)
+    --color: #fff;
+    --ion-color-base: #fff;
+    font-size: 1.0em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: transform 0.3 ease;
+  }
+  ion-button.close-button {
+    --background: rgba(255, 0, 0, 0.7);
+    --background-activated: rgba(255, 0, 0, 0.9);
+    --background-hover: rgba(255, 0, 0, 0.8);
+    --color: #fff;
+    --color-hover: #fff;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .inicio-button:hover {
+    transform: translateY(-5px); /* efecto de levantamiento al pasar el mouse */
+    
+  }
+  

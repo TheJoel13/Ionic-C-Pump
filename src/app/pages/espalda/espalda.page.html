@@ -1,0 +1,189 @@
+<ion-app>
+  <ion-menu contentId="main-content"class="menu-scroll" contentId="main-content" scrollEvents="true" scrollEnabled="true" >
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-button onclick="window.location.href = '/bienvenida'">
+            <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>MENU ESPALDA</ion-title>
+        <ion-buttons slot="end">
+        </ion-buttons>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>EJERCICIOS</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item> 
+              <ion-thumbnail slot="start">
+                <img  routerLink="/pecho" routerDirection="root" alt="cbum" src= '/assets/pecho.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pecho" routerDirection="root">Pecho</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/espalda" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/Pecho.jfif' />
+              </ion-thumbnail>
+              <ion-item routerLink="/espalda" routerDirection="root">espalda</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/brazo" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/brazo.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/brazo" routerDirection="root">Brazo</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/hombro" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/cbum-1669971164.jpeg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/hombro" routerDirection="root">hombro</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/abdomen" routerDirection="root" slot="start">
+                <img alt="leana deeb" src='/assets/leana.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/abdomen" routerDirection="root">Abdomen</ion-item>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail  routerLink="/pierna" routerDirection="root" slot="start">
+                <img alt="mirandacohen" src='/assets/mirandacohen.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pierna" routerDirection="root">Gluteo y Pierna</ion-item>
+            </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+    <ion-footer>
+      <ion-accordion-group>
+      <ion-accordion value="ninth">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Creditos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Donaciones Paypal: JoelBalderramaR13@gmail.com<br>
+          <br>
+          Fotos y/o gifs obtenidos de:<br>
+          <br>
+          thumbs.gfycat.com<br>
+          eslamoda.com<br>
+          www.sport.es<br>
+          wixmp.com<br>
+          hips.hearstapps.com<br>
+          media.giphy.com<br>
+          health.com<br>
+          i.gifer.com<br>
+          blog.ferrato.com<br>
+          hips.hearstapps.com<br>
+          santafixie.com<br>
+          media.revistagq.com<br>
+          j.gifs.com<br>
+          i.pinimg.com<br>
+          pramafitness.com<br>
+          cdn.shopify.com<br>
+          4.bp.blogspot.com<br>
+          cambiandoeljuego.com<br>
+          leanadeebb.com<br>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="tenths">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Contactanos!</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-buttons slot="start" class="redes_sociales">
+            <ion-icon name="logo-instagram" (click)="redirectToInstagram()"></ion-icon>
+            <ion-icon name="logo-discord" (click)="redirectToDiscord()"></ion-icon>
+           <ion-icon name="mail" (click)="redirectToMail()"></ion-icon>
+          </ion-buttons>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    </ion-footer>    
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+         <ion-title style="position: relative;">   
+      ESPALDA
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button onclick="window.location.href = '/bienvenida'">
+        <ion-icon slot="icon-only"  name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      </ion-toolbar>
+<body style="background: no-repeat center/80% url('/assets/gimnasio.jpg'); background-size: auto;">
+  <div style="display: flex; max-height: 100vh;overflow-y: scroll; justify-content: center;align-items: center;">
+    <ion-accordion-group  expand="inset" style="align-items: center; justify-content: center;">
+      <ion-button  class="acordion"  color="dark"(click)="presentAlert() "style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+        <ion-icon name="bulb-outline" slot="start" style="font-size: 24px;" data-toggle="tooltip" data-placement="left" title="Recuerda calentar y estirar de manera adecuada el cuerpo y el grupo muscular que vas a entrenar." ></ion-icon>
+      Recuerda!
+    <div class="ion-padding" slot="">
+    </div>
+  </ion-button>
+      <ion-card class="card1">
+        <div style="display: inline-block;" class="ion-justify-content-center align-items ">
+          <img alt="Dorsal" src="/assets/dorsal.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center ">Dorsal</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="1">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+             Para este ejercicio necesitaremos una superficie plana en la cual acostarnos boca abajo , una vez hecho esto pondremos nuestras manos atras de nuestras orejas y con los pies separados a la altura de los hombros , una vez asi tendremos que elevar el homoplato hacia atras y al mismo tiempo levantar ambas piernas como se  muestra en el ejemplo  y  de esta manera asi se realizaria este ejercicio. 
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="card2">
+        <div>
+          <img alt="espalda" src="/assets/home-back.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center">Espalda</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="2">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+              Para este ejercicio necesitaremos un objeto el cual podamos pasar nuestro cuerpo por debajo de el y que quede suficiente espacio para poder empujar nuestro cuerpo hacia el un buen ejemlo de este puede ser una silla o una mesa. para realizar este ejercicio asegurate de que el objeto se la suficientemente fuerte para soportar tu peso y luego podemos realizar el ejercicio que practicamente es pasar tu cuerpo por debajo del objeto agarrarte fuertemente y empujar tu cuerpo hacia el , como se muestra en el ejemplo de la imagen. 
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card class="card3">
+      <div>
+        <img alt="remoespalda" src="/assets/espaldajalon.gif"/>
+      </div>
+      <ion-card-header>
+        <ion-card-title class="ion-justify-content-center">Remo de espalda</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-accordion value="3">
+          <ion-item slot="header" color="light">
+            <ion-label>Como Hacerlo?</ion-label>
+          </ion-item>
+          <div class="ion-padding ion-justify-content-center" slot="content">
+         Para hacer ester ejercicio necesitaremos de un objeto que son ligas o bandas de resistencia.  Este ejercicio se puede hacer de dos formas , UNA de ellas es poniendo rodear con la ligas o la banda una columna fuerte un ejemplo puede ser un arbol , algunar pilar y la liga o bandas debe de estar a la altura de tus hombros luego de ello damos con ambas manos un jalon hasta que sientas que el homoplato se contrae y luego regresamos lentamente a la posicion inicial. La SEGUNDA manera es poner las ligas o las bandas en nuestras plantas de los pies y jalaremos con las manos las ligas esto de manera que la parte de las ligas esten haciendo resistencia en los pies y con nuestras manos la otra parte este activando los musculos de la espalda, ten en cuenta que debes de mantener una postura recta en tu columna si no te puedes llegar a lastimar.
+          </div>
+        </ion-accordion>
+      </ion-card-content>
+  </ion-card>
+      
+      

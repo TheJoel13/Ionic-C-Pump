@@ -1,0 +1,188 @@
+<ion-app>
+  <ion-menu contentId="main-content"class="menu-scroll" contentId="main-content" scrollEvents="true" scrollEnabled="true" >
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-button onclick="window.location.href = '/bienvenida'">
+            <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>MENU HOMBRO</ion-title>
+        <ion-buttons slot="end">
+        </ion-buttons>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>EJERCICIOS</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item> 
+              <ion-thumbnail slot="start">
+                <img  routerLink="/pecho" routerDirection="root" alt="cbum" src= '/assets/pecho.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pecho" routerDirection="root">Pecho</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/espalda" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/Pecho.jfif' />
+              </ion-thumbnail>
+              <ion-item routerLink="/espalda" routerDirection="root">espalda</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/brazo" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/brazo.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/brazo" routerDirection="root">Brazo</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/hombro" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/cbum-1669971164.jpeg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/hombro" routerDirection="root">hombro</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/abdomen" routerDirection="root" slot="start">
+                <img alt="leana deeb" src='/assets/leana.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/abdomen" routerDirection="root">Abdomen</ion-item>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail  routerLink="/pierna" routerDirection="root" slot="start">
+                <img alt="mirandacohen" src='/assets/mirandacohen.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pierna" routerDirection="root">Pierna y Gluteo</ion-item>
+            </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+    <ion-footer>
+      <ion-accordion-group>
+      <ion-accordion value="ninth">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Creditos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Donaciones Paypal: JoelBalderramaR13@gmail.com<br>
+          <br>
+          Fotos y/o gifs obtenidos de:<br>
+          <br>
+          thumbs.gfycat.com<br>
+          eslamoda.com<br>
+          www.sport.es<br>
+          wixmp.com<br>
+          hips.hearstapps.com<br>
+          media.giphy.com<br>
+          health.com<br>
+          i.gifer.com<br>
+          blog.ferrato.com<br>
+          hips.hearstapps.com<br>
+          santafixie.com<br>
+          media.revistagq.com<br>
+          j.gifs.com<br>
+          i.pinimg.com<br>
+          pramafitness.com<br>
+          cdn.shopify.com<br>
+          4.bp.blogspot.com<br>
+          cambiandoeljuego.com<br>
+          leanadeebb.com<br>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="tenths">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Contactanos!</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-buttons slot="start" class="redes_sociales">
+            <ion-icon name="logo-instagram" (click)="redirectToInstagram()"></ion-icon>
+            <ion-icon name="logo-discord" (click)="redirectToDiscord()"></ion-icon>
+           <ion-icon name="mail" (click)="redirectToMail()"></ion-icon>
+          </ion-buttons>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    </ion-footer>    
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+         <ion-title style="position: relative;">
+      HOMBRO
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button onclick="window.location.href = '/bienvenida'">
+        <ion-icon slot="icon-only"  name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      </ion-toolbar>
+<body style="background: no-repeat center/80% url('/assets/gimnasio.jpg'); background-size: auto;">
+  <div style="display: flex; max-height: 100vh;overflow-y: scroll; justify-content: center;align-items: center;">
+    <ion-accordion-group  expand="inset" style="align-items: center; justify-content: center;">
+      <ion-button  class="acordion"  color="dark"(click)="presentAlert() "style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+        <ion-icon name="bulb-outline" slot="start" style="font-size: 24px;" data-toggle="tooltip" data-placement="left" title="Recuerda calentar y estirar de manera adecuada el cuerpo y el grupo muscular que vas a entrenar." ></ion-icon>
+      Recuerda!
+    <div class="ion-padding" slot="">
+    </div>
+  </ion-button>
+      <ion-card class="card1">
+        <div style="display: inline-block;" class="ion-justify-content-center align-items ">
+          <img alt="Hombro" src="/assets/e767f1775ecefbc1ee5366162727da59.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center ">Hombro</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="1">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+             Para este ejercicio necesitaremos tener un buen control sobre nuestra fuerza en brazos ya que se requerira bastante, luego tenemos que estar en una superficie plana y de pie posterior  a ello extender las manos hacia arriba y con las palmas abiertas , luego bajar todo tu torso como si fueras a tocar las puntas de tus pies y una vez estando en esa posicion empujar tu cuerpo un poco adelante de manera que tus talones ya no toquen el suelo y solo las puntas de tus pies lo hagan luego felxionas tus codos como se muestra en el ejemplo y listo!.
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="card2">
+        <div>
+          <img alt="hombro" src="/assets/oZY2Wk.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center">Cobra Hombro</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="2">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+              Para este ejercicio necesitaremos igual que en el ejercicio anterior una buena forza sobre nuestros brazos . Para realizar este ejercicio tendremos que ponernos de rodillas y hacer una posicion igual que si hicieramos el pecho basico pero esta vez sin cruzar las piernas , esto quiere decir que los brazos extendidas apoyados del suelo a la altura de los hombros y luego flexionar tus codos y mover tu torso hacia atras como se muestra en la imagen.
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card class="card3">
+      <div>
+        <img alt="hombro" src="/assets/4elevaciones-unilat.gif" />
+      </div>
+      <ion-card-header>
+        <ion-card-title class="ion-justify-content-center">Elevaciones laterales</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-accordion value="3">
+          <ion-item slot="header" color="light">
+            <ion-label>Como Hacerlo?</ion-label>
+          </ion-item>
+          <div class="ion-padding ion-justify-content-center" slot="content">
+         Para hacer ester ejercicio necesitaremos de un objeto manipulable con un peso considerado , que quiere decir considerado , que sea un peso que no sea facil de mover pero lo puedas mover, una vez teniendo el objeto empezaremos a hacer el ejercicio. ya sujetando el objeto pondremos nuestro brazo a la mitad de el abdomen y de ahi elevaremos el brazo dependiendo de que lado sea por ejemplo si trabajaras el hombro izquierdo elevaras el brazo izquierdo obviamente con el objeto en ese brazo, subiras de manera lenta y bajaras de la misma manera  y concentrando la fuerza en el hombro como se muestra en el ejemplo. 
+          </div>
+        </ion-accordion>
+      </ion-card-content>
+  </ion-card>
+      
+      

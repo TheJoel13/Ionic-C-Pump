@@ -1,0 +1,207 @@
+<ion-app>
+  <ion-menu contentId="main-content"class="menu-scroll" contentId="main-content" scrollEvents="true" scrollEnabled="true" >
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title> MENU INICIO</ion-title>
+        <ion-buttons slot="end">
+        </ion-buttons>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>EJERCICIOS</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item> 
+              <ion-thumbnail slot="start">
+                <img  routerLink="/pecho" routerDirection="root" alt="cbum" src= '/assets/pecho.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pecho" routerDirection="root">Pecho</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/espalda" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/Pecho.jfif' />
+              </ion-thumbnail>
+              <ion-item routerLink="/espalda" routerDirection="root">espalda</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/brazo" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/brazo.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/brazo" routerDirection="root">Brazo</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/hombro" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/cbum-1669971164.jpeg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/hombro" routerDirection="root">hombro</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/abdomen" routerDirection="root" slot="start">
+                <img alt="leana deeb" src='/assets/leana.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/abdomen" routerDirection="root">Abdomen</ion-item>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail  routerLink="/pierna" routerDirection="root" slot="start">
+                <img alt="mirandacohen" src='/assets/mirandacohen.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pierna" routerDirection="root">Pierna y Gluteo</ion-item>
+            </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+
+    <ion-footer>
+      <ion-accordion-group>
+      <ion-accordion value="ninth">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Creditos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Donaciones Paypal: JoelBalderramaR13@gmail.com<br>
+          <br>
+          Fotos y/o gifs obtenidos de:<br>
+          <br>
+          thumbs.gfycat.com<br>
+          eslamoda.com<br>
+          www.sport.es<br>
+          wixmp.com<br>
+          hips.hearstapps.com<br>
+          media.giphy.com<br>
+          health.com<br>
+          i.gifer.com<br>
+          blog.ferrato.com<br>
+          hips.hearstapps.com<br>
+          santafixie.com<br>
+          media.revistagq.com<br>
+          j.gifs.com<br>
+          i.pinimg.com<br>
+          pramafitness.com<br>
+          cdn.shopify.com<br>
+          4.bp.blogspot.com<br>
+          cambiandoeljuego.com<br>
+          leanadeebb.com<br>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="tenths">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Contactanos!</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-buttons slot="start" class="redes_sociales">
+            <ion-icon name="logo-instagram" (click)="redirectToInstagram()"></ion-icon>
+            <ion-icon name="logo-discord" (click)="redirectToDiscord()"></ion-icon>
+           <ion-icon name="mail" (click)="redirectToMail()"></ion-icon>
+          </ion-buttons>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    </ion-footer>    
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end" class="ion-align-items-center">
+          <ion-button (click)="logout()">
+            Salir
+          </ion-button>
+        </ion-buttons>
+
+        <ion-title style="margin: auto;">C-PUMP EXERCISES </ion-title >
+      </ion-toolbar>
+      <body style ="background: no-repeat center/80% url('/assets/gimnasio.jpg'); background-size: auto;">
+        <ion-accordion-group class="my-accordion-group">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="dark" (click)="showAlert('first')">
+              <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+                <ion-icon name="barbell" slot="start" style="font-size: 24px;"></ion-icon>
+                ¿Como entrenar?
+              </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="">
+            </div>
+          </ion-accordion>          
+          <ion-accordion value="second">
+            <ion-item slot="header" color="dark" (click)="showAlert('second')">
+              <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+                <ion-icon name="Heart" slot="start" style="font-size: 24px;"></ion-icon>
+                ¿Como hacer mi rutina?
+              </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="">
+            </div>        
+        </ion-accordion>          
+        <ion-accordion value="third">
+          <ion-item slot="header" color="dark"(click)="showAlert('third')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="bed-outline" slot="start" style="font-size: 24px;"></ion-icon>
+              Recuerda que...
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion>  
+        <ion-accordion value="fourth">
+          <ion-item slot="header" color="dark"(click)="showAlert('fourth')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="barbell-sharp" slot="start" style="font-size: 24px;"></ion-icon>
+              ¿Porque hacer ejercicio ?
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion>  
+        <ion-accordion value="fifth">
+          <ion-item slot="header" color="dark"(click)="showAlert('fifth')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="help-outline" slot="start" style="font-size: 24px;"></ion-icon>
+            ¿Cuantas veces hacer ejercicio?
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion> 
+        <ion-accordion value="six">
+          <ion-item slot="header" color="dark"(click)="showAlert('sixth')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="bulb-outline" slot="start" style="font-size: 24px;"></ion-icon>
+            Te recomendamos que...
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion>
+        <ion-accordion value="seventh">
+          <ion-item slot="header" color="dark"(click)="showAlert('seventh')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="restaurant-outline" slot="start" style="font-size: 24px;"></ion-icon>
+            Recuerda que...
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion> 
+        <ion-accordion value="eigth">
+          <ion-item slot="header" color="dark"(click)="showAlert('eight')">
+            <ion-label style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+              <ion-icon name="bicycle-outline" slot="start" style="font-size: 24px;"></ion-icon>
+            ¿Cardio?
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="">
+          </div>
+        </ion-accordion> 
+        </ion-accordion-group>
+      </body>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+    </ion-content>
+  </div>
+</ion-app>

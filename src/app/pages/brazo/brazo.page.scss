@@ -1,0 +1,59 @@
+ion-accordion-group {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  ion-card {
+    max-width: 550px;
+    margin-bottom: 60px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    ion-accordion-group {
+      margin-top: 20%;
+    }
+    
+    ion-card {
+      max-width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  }
+  .redes_sociales ion-icon {
+    font-size: 27px; /* ajusta el tamaño a tu gusto */
+    margin-right: 25px; /* ajusta el espacio entre los iconos */
+  }
+  
+  ion-accordion {
+    border-radius: 10px;
+  }
+  .title {
+    
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.acordion:hover {
+  transform: scale(1.1);
+}
+
+.acordion{
+  opacity: .9;
+}
+
+
+ion-button {
+  border-radius: 10px;
+}
+
+.acordion {
+  max-width: 200px; /* ajusta el ancho máximo del acordeón */
+  margin: auto; /* centra horizontalmente */
+ margin-top: 20px; /* ajusta el margen superior para centrar verticalmente */
+ margin-bottom: 40px;
+  
+ 
+}

@@ -1,0 +1,23 @@
+
+    .my-accordion-group {
+        max-width: 350px; /* ajusta el ancho máximo del acordeón */
+        margin: auto; /* centra horizontalmente */
+        margin-top: 50px; /* ajusta el margen superior para centrar verticalmente */
+      }
+      .my-accordion-group ion-accordion {
+        opacity: 0.9;
+      }
+      .redes_sociales ion-icon {
+        font-size: 27px; /* ajusta el tamaño a tu gusto */
+        margin-right: 25px; /* ajusta el espacio entre los iconos */
+      }
+      
+      ion-accordion {
+        border-radius: 10px;
+      }
+      .title {
+        
+        margin-left: auto;
+        font-size: 18px;
+        font-weight: bold;
+    }

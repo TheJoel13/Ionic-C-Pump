@@ -1,0 +1,197 @@
+<ion-app>
+  <ion-menu contentId="main-content"class="menu-scroll" contentId="main-content" scrollEvents="true" scrollEnabled="true" >
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-button onclick="window.location.href = '/bienvenida'">
+            <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>MENU Pierna y Gluteo</ion-title>
+        <ion-buttons slot="end">
+        </ion-buttons>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>EJERCICIOS</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item> 
+              <ion-thumbnail slot="start">
+                <img  routerLink="/pecho" routerDirection="root" alt="cbum" src= '/assets/pecho.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pecho" routerDirection="root">Pecho</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/espalda" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/Pecho.jfif' />
+              </ion-thumbnail>
+              <ion-item routerLink="/espalda" routerDirection="root">espalda</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/brazo" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/brazo.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/brazo" routerDirection="root">Brazo</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/hombro" routerDirection="root" slot="start">
+                <img alt="cbum" src='/assets/cbum-1669971164.jpeg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/hombro" routerDirection="root">hombro</ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail routerLink="/abdomen" routerDirection="root" slot="start">
+                <img alt="leana deeb" src='/assets/leana.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/abdomen" routerDirection="root">Abdomen</ion-item>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail  routerLink="/pierna" routerDirection="root" slot="start">
+                <img alt="mirandacohen" src='/assets/mirandacohen.jpg' />
+              </ion-thumbnail>
+              <ion-item routerLink="/pierna" routerDirection="root">Pierna y Gluteo</ion-item>
+            </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+    <ion-footer>
+      <ion-accordion-group>
+      <ion-accordion value="ninth">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Creditos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Donaciones Paypal: JoelBalderramaR13@gmail.com<br>
+          <br>
+          Fotos y/o gifs obtenidos de:<br>
+          <br>
+          thumbs.gfycat.com<br>
+          eslamoda.com<br>
+          www.sport.es<br>
+          wixmp.com<br>
+          hips.hearstapps.com<br>
+          media.giphy.com<br>
+          health.com<br>
+          i.gifer.com<br>
+          blog.ferrato.com<br>
+          hips.hearstapps.com<br>
+          santafixie.com<br>
+          media.revistagq.com<br>
+          j.gifs.com<br>
+          i.pinimg.com<br>
+          pramafitness.com<br>
+          cdn.shopify.com<br>
+          4.bp.blogspot.com<br>
+          cambiandoeljuego.com<br>
+          leanadeebb.com<br>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="tenths">
+        <ion-item slot="header" color="light">
+          <ion-label class="title">Contactanos!</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-buttons slot="start" class="redes_sociales">
+            <ion-icon name="logo-instagram" (click)="redirectToInstagram()"></ion-icon>
+            <ion-icon name="logo-discord" (click)="redirectToDiscord()"></ion-icon>
+           <ion-icon name="mail" (click)="redirectToMail()"></ion-icon>
+          </ion-buttons>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    </ion-footer>    
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+         <ion-title style="position: relative;">  
+      Pierna y Gluteo
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button onclick="window.location.href = '/bienvenida'">
+        <ion-icon slot="icon-only"  name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      </ion-toolbar>
+<body style="background: no-repeat center/80% url('/assets/gimnasio.jpg'); background-size: auto;">
+  <div style="display: flex; max-height: 100vh;overflow-y: scroll; justify-content: center;align-items: center;">
+    <ion-accordion-group  expand="inset" style="align-items: center; justify-content: center;">
+      <ion-button  class="acordion"  color="dark"(click)="presentAlert() "style="font-size: 16px; display: flex; align-items: center;text-align: center;">
+        <ion-icon name="bulb-outline" slot="start" style="font-size: 24px;" data-toggle="tooltip" data-placement="left" title="Recuerda calentar y estirar de manera adecuada el cuerpo y el grupo muscular que vas a entrenar." ></ion-icon>
+      Recuerda!
+    <div class="ion-padding" slot="">
+    </div>
+  </ion-button>
+      <ion-card class="card1">
+        <div style="display: inline-block;" class="ion-justify-content-center align-items ">
+          <img alt="gluteo y pierna" src="/assets/gluteos2.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center ">Patada</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="1">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+             Para este ejercicio necesitaremos una superficie plana , ponernos en posicion como si fueramos a gatear y apoyamos nuestros antebrazos en el suelo y luego este ejercicio se recomienda usar pies de tobillo para una mayor efectividad una vez estando en la posicion empujamos la pierna hasta atras hasta donde llegue y la devolvemos a su lugar original  luego el mismo procedimiento para la otra pierna este ejercicio ayuda principalmente  a los gluteos.
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="card2">
+        <div>
+          <img alt="gluteo y pierna" src="/assets/SQUAT_JUMP-1.gif" />
+        </div>
+        <ion-card-header>
+          <ion-card-title class="ion-justify-content-center">Sentadilla con salto</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-accordion value="2">
+            <ion-item slot="header" color="light">
+              <ion-label>Como Hacerlo?</ion-label>
+            </ion-item>
+            <div class="ion-padding ion-justify-content-center" slot="content">
+              Para hacer ester ejercicio necesitaremos de una superficie plana en la cual primero tendremos que estar en una posicion recta y luego comenzaremos a hacer el ejercicio que basicamente es hacer una sentadilla y cuando la hayas hecho impulsate con tus piernas y brazos dando un brinco lo mas alto que puedas y cuando vuelvas a caer haz el mismo procedimiento como se muestra en la iamgen . OJO ( Procura hacer la sentadilla de manera que tus gluteos los hagas hacia atras.)
+          
+            </div>
+          </ion-accordion>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card class="card3">
+      <div>
+        <img alt="bicep" src="/assets/ConfusedGleefulBlackbird-size_restricted.gif" />
+      </div>
+      <ion-card-header>
+        <ion-card-title class="ion-justify-content-center">Hip thrust</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-accordion value="3">
+          <ion-item slot="header" color="light">
+            <ion-label>Como Hacerlo?</ion-label>
+          </ion-item>
+          <div class="ion-padding ion-justify-content-center" slot="content">
+         Para hacer ester ejercicio necesitaremos de algun objeto o lugar para apoyar la mitad de nuestra espalda para ser mas especificas de la mitad para arriba de nuestra espalda pero suficientemente alto o bajo para que nuestras caderas toquen el piso del lugar un objeto que podemos tener en casa que cumpla esta funcion puede ser un sillon. una ves estando en esa posicion Para hacer un hip thrust, sigue estos pasos:
+         Siéntate en el suelo con las piernas extendidas hacia adelante y una barra cargada colocada sobre tus caderas. Si no tienes una barra, puedes usar una pesa rusa, mancuernas o incluso una mochila cargada con libros.
+         Coloca una almohadilla o una toalla doblada sobre tus caderas para protegerlas y proporcionar un poco de comodidad.
+         Coloca tus pies en el suelo, cerca de tus glúteos, y asegúrate de que tus rodillas estén dobladas en un ángulo de 90 grados.
+         Asegura la barra en su lugar sosteniéndola con las manos a ambos lados de tus caderas.
+         Aprieta tus glúteos y levanta tus caderas hacia el techo mientras exhalas. Mantén la contracción en la parte superior del movimiento durante un segundo.
+         Baja tus caderas de nuevo al suelo mientras inhalas y relajas tus glúteos.
+         Repite el movimiento de 8 a 12 veces, dependiendo de tu nivel de condición física y objetivos de entrenamiento.
+         Es importante mantener una postura adecuada y no arquear la espalda durante el movimiento para evitar lesiones. Además, ajusta la carga según tu nivel de fuerza y progreso gradualmente en el peso a medida que avanzas.
+          </div>
+        </ion-accordion>
+      </ion-card-content>
+  </ion-card>
+      
+      
